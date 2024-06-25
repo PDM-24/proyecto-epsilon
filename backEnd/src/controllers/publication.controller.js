@@ -2,8 +2,8 @@ import Publication from "../models/publication.model.js";
 import User from "../models/user.model.js";
 import { uploadImage } from "../cloudinary.js";
 import fs from "fs-extra";
-import fetch from 'node-fetch';
-import path from 'path';
+import fetch from "node-fetch";
+import path from "path";
 
 //! method to create a publications
 export const createPublication = async (req, res) => {
@@ -33,7 +33,6 @@ export const createPublication = async (req, res) => {
       return res.status(400).json({ message: "User not found" });
     }
 
-    
     let newPublication = new Publication({
       propertyType,
       neighborhood,
@@ -55,27 +54,29 @@ export const createPublication = async (req, res) => {
       seller: userFound._id,
     });
 
-    if(req.files && req.files.images){
+    if (req.files && req.files.images) {
       const images = Array.isArray(req.files.images)
-       ? req.files.images 
-       : [req.files.images];
-       for (const image of images) {
+        ? req.files.images
+        : [req.files.images];
+      for (const image of images) {
         const result = await uploadImage(image.tempFilePath);
         newPublication.images.push({
           public_id: result.public_id,
           secure_url: result.secure_url,
         });
-       }
-       images.forEach((image)=> fs.unlink(image.tempFilePath));
+      }
+      images.forEach((image) => fs.unlink(image.tempFilePath));
     }
-
 
     if (imageUris) {
       const uris = Array.isArray(imageUris) ? imageUris : [imageUris];
       for (const uri of uris) {
         const response = await fetch(uri);
         const buffer = await response.buffer();
-        const tempFilePath = path.join('/tmp', `${Date.now()}-${path.basename(uri)}`);
+        const tempFilePath = path.join(
+          "/tmp",
+          `${Date.now()}-${path.basename(uri)}`
+        );
         fs.writeFileSync(tempFilePath, buffer);
         const result = await uploadImage(tempFilePath);
         newPublication.images.push({
@@ -87,10 +88,15 @@ export const createPublication = async (req, res) => {
     }
 
     if (req.body.images) {
-      const imagePaths = Array.isArray(req.body.images) ? req.body.images : [req.body.images];
+      const imagePaths = Array.isArray(req.body.images)
+        ? req.body.images
+        : [req.body.images];
       for (const image of imagePaths) {
         try {
-          const tempFilePath = path.join('/tmp', `${Date.now()}-${path.basename(image.path)}`);
+          const tempFilePath = path.join(
+            "/tmp",
+            `${Date.now()}-${path.basename(image.path)}`
+          );
           fs.copyFileSync(image.path, tempFilePath);
           const result = await uploadImage(tempFilePath);
           newPublication.images.push({
@@ -99,7 +105,7 @@ export const createPublication = async (req, res) => {
           });
           fs.unlinkSync(tempFilePath);
         } catch (error) {
-          console.error('Error copying file:', error);
+          console.error("Error copying file:", error);
         }
       }
     }
@@ -115,7 +121,8 @@ export const createPublication = async (req, res) => {
   }
 };
 //! method to get all approved publications
-export const getAllPublication = async (res) => {
+// Adjust the import according to your file structure
+export const getAllPublication = async (req, res) => {
   try {
     const publications = await Publication.find({
       status: "approved",
@@ -128,7 +135,7 @@ export const getAllPublication = async (res) => {
 };
 
 //TODO method to get all approved publications
-export const getAllPublicationByUser = async (res) => {
+export const getAllPublicationByUser = async (req, res) => {
   try {
     const publications = await Publication.find({
       status: "approved",

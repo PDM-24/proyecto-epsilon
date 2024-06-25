@@ -4,17 +4,18 @@ import {
   createPublication,
   updatePublicationStatus,
   getAllPublication,
+  getAllPublicationByUser,
   getPendingPublication,
   getUnapprovedPublication,
   deleteAdminPublication,
-  getAllPublicationByUser,
   deleteUserPublication,
 } from "../controllers/publication.controller.js";
+
 const router = Router();
 
 router.post("/publication/create", authRequired, createPublication);
 router.get("/publication/all", authRequired, getAllPublication);
-router.get("/publication/user/all", authRequired, getAllPublicationByUser);
+router.get("/publication/user/:id", authRequired, getAllPublicationByUser);
 router.delete(
   "/publication/user/delete/:id",
   authRequired,
