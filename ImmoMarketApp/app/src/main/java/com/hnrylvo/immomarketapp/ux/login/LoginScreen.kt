@@ -38,19 +38,12 @@ import com.hnrylvo.immomarketapp.ui.theme.MyTypography
 import com.hnrylvo.immomarketapp.ui.theme.PrimaryGreen
 import com.hnrylvo.immomarketapp.ui.theme.SecondaryGreen
 import com.hnrylvo.immomarketapp.ui.theme.White
-import com.hnrylvo.inmomarket.R
 import com.hnrylvo.inmomarket.ui.compose.buttons.PrimaryButton
 import com.hnrylvo.inmomarket.ui.compose.containers.AppScaffold
 import com.hnrylvo.inmomarket.ui.compose.dividers.HorizontalDivider
 import com.hnrylvo.inmomarket.ui.compose.headers.TitleHeader
 import com.hnrylvo.inmomarket.ui.compose.inputs.InputField
 import com.hnrylvo.inmomarket.ui.compose.inputs.PasswordInputField
-import com.hnrylvo.inmomarket.ui.theme.BackgroundGreen
-import com.hnrylvo.inmomarket.ui.theme.LightGray
-import com.hnrylvo.inmomarket.ui.theme.MyTypography
-import com.hnrylvo.inmomarket.ui.theme.PrimaryGreen
-import com.hnrylvo.inmomarket.ui.theme.SecondaryGreen
-import com.hnrylvo.inmomarket.ui.theme.White
 import com.hnrylvo.inmomarket.ux.register.RegisterRoute
 import kotlinx.coroutines.launch
 
