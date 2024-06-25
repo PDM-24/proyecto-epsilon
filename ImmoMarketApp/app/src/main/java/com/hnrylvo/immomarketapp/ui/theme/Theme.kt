@@ -18,7 +18,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = PrimaryGreen,
     secondary = PurpleGrey40,
     tertiary = Pink40
 
@@ -34,25 +34,25 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun ImmoMarketAppTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+fun InmoMarketTheme(
+    //darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
-
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
-    }
+//    val colorScheme = when {
+//        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+//            val context = LocalContext.current
+//            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+//        }
+//
+//        darkTheme -> DarkColorScheme
+//        else -> LightColorScheme
+//    }
 
     MaterialTheme(
-        colorScheme = colorScheme,
-        typography = Typography,
+        //colorScheme = colorScheme,
+        typography = MyTypography,
         content = content
     )
 }
