@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">ImmoMarketApp</string>
+
+    <string name="app_searchIcon">Icono de busqueda</string>
+    <string name="app_search">Buscar</string>
+    <string name="app_notificationIcon">Icono de notificacion</string>
+    <string name="app_notification">Notificaciones</string>"
+    <string name="app_image_description">Fotos de la propiedad</string>
+    <string name="app_go_back">Volver atrás</string>
+    <string name="app_select_an_option">Seleccione una opción</string>
+    <string name="app_selected">Seleccionado</string>
+    <string name="app_next">Siguiente</string>
+    <string name="app_select_the_days">Seleccione los días</string>
+    <string name="app_add">Añadir</string>
+    <string name="app_yes">Si</string>
+    <string name="app_no">No</string>
+    <string name="app_read_more">Leer más</string>
+
+    <!-- Login -->
+    <string name="login_header">Inicio de sesión</string>
+    <string name="login_inmomarket_icon">Icono de InmoMarket</string>
+    <string name="login_email">Correo electrónico</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_toggle_password_visibility"> Mostrar contraseña</string>
+    <string name="login_login">Iniciar sesión</string>
+    <string name="login_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_or">O</string>
+    <string name="login_google_icon">Icono de Google</string>
+    <string name="login_google">Iniciar con Google</string>
+    <string name="login_dont_have_account">¿No tienes cuenta?</string>
+    <string name="login_create_account">Crea una.</string>
+
+    <!--- Register -->
+    <string name="register">Registrarse</string>
+    <string name="register_first_name">Nombre</string>"
+    <string name="register_last_name">Apellido</string>
+    <string name="register_email">Correo electrónico</string>
+    <string name="register_create_password">Crear contraseña</string>
+    <string name="register_confirm_password">Confirmar contraseña</string>
+    <string name="register_already_have_account">¿Ya tienes cuenta?</string>
+    <string name="register_login">Inicia sesión.</string>
+
+    <!--- Home -->
+    <string name="home_todays_picks">Tendencias</string>
+    <string name="home_more">Más publicaciones</string>
+    <string name="home_all">Todos</string>
+
+    <!--- SideBar -->
+    <string name="sidebar_contacted_properties">Avisos contactados</string>
+    <string name="sidebar_favorite_properties">Favoritos</string>
+    <string name="sidebar_my_properties">Mis publicaciones</string>"
+    <string name="sidebar_buy_properties">Comprar</string>
+    <string name="sidebar_sell_properties">Vender propiedad</string>
+    <string name="sidebar_help">Ayuda</string>
+    <string name="sidebar_logout">Cerrar sesión</string>
+
+    <!--- Sales Form -->
+    <string name="sales_form_top_header">Crear aviso</string>
+    <string name="sales_form_title">Cuéntanos, ¿Qué quieres publicar?</string>
+    <string name="sales_form_location_title">¿Dónde se ubica la propiedad?</string>
+    <string name="sales_form_property_types">Tipo de inmueble</string>
+    <string name="sales_form_property_address">Dirección exacta</string>
+    <string name="sales_form_property_department">Departamento</string>
+    <string name="sales_form_property_municipality">Municipio</string>
+    <string name="sales_form_property_neighborhood">Colonia</string>
+    <string name="sales_form_property_address_input">Ingrese la dirección exacta</string>
+    <string name="sales_form_property_department_input">Ingrese el departamento</string>
+    <string name="sales_form_property_municipality_input">Ingrese el municipio</string>
+    <string name="sales_form_property_neighborhood_input">Ingrese la colonia</string>
+    <string name="sales_form_property_type_house">Casa</string>
+    <string name="sales_form_property_type_apartment">Apartamento</string>
+    <string name="sales_form_property_type_land">Terreno/lote</string>
+    <string name="sales_form_property_type_beach_house">Rancho</string>
+    <string name="sales_form_property_save_location">Guardar ubicación</string>
+    <string name="sales_form_property_location">Ubicación</string>
+    <string name="sales_form_property_exact_location">Tu propiedad se encuentra en:</string>
+    <string name="sales_form_upload">Publicar</string>
+    <!-- Sales Form Property Specs -->
+    <string name="sales_form_property_specs_title">Detalles de la propiedad</string>
+    <string name="sales_form_property_size">Tamaño</string>
+    <string name="sales_form_property_bedrooms">Habitaciones</string>
+    <string name="sales_form_property_bathrooms">Baños</string>
+    <string name="sales_form_property_parking">Parqueos</string>
+    <string name="sales_form_property_floor">Pisos</string>
+    <string name="sales_form_property_furnished">Amueblada</string>
+    <string name="sales_form_property_add_description">Añadir descripción</string>
+    <string name="sales_form_property_description">Descripción</string>
+    <string name="sales_form_property_details">Brinda más detalles de tu propiedad</string>
+    <string name="sales_form_property_has_water">Conexión a agua</string>
+    <string name="sales_form_property_has_electricity">Conexión eléctrica</string>
+    <string name="sales_form_property_has_sewage">Alcantarillado</string>
+    <string name="sales_form_property_topography">Topografía</string>
+    <string name="sales_form_property_topography_flat">Plano</string>
+    <string name="sales_form_property_topography_slope">Inclinado</string>
+    <string name="sales_form_property_topography_mountainous">Montañoso</string>
+    <string name="sales_form_property_classification">Clasificación</string>
+    <string name="sales_form_property_classification_commercial">Comercial</string>
+    <string name="sales_form_property_classification_residential">Residencial</string>
+    <string name="sales_form_property_classification_industrial">Industrial</string>
+    <string name="sales_form_property_size_var">%s m²</string>
+    <string name="sales_form_property_bedrooms_var">%s hab.</string>
+    <string name="sales_form_property_bathrooms_var">%s baños</string>
+    <string name="sales_form_property_parking_var">%s parqueo</string>
+    <string name="sales_form_property_floor_var">%s pisos</string>
+    <string name="sales_form_property_no_furnished">No amueblada</string>
+    <!-- Sales Form Property Photos -->
+    <string name="sales_form_property_photos_title">Fotos de la propiedad</string>
+    <string name="sales_form_property_photos_add">Agregar fotos</string>
+    <string name="sales_form_property_photos_warning">Al menos 3 fotos - Escoja la foto principal primero  </string>"
+    <string name="sales_form_property_post_photos">Fotos a publicar</string>
+    <string name="sales_form_property_no_photos">No se ha seleccionado ninguna foto</string>
+    <!--- Sales Form Property Details -->
+    <string name="sales_form_property_details_title">Detalles importantes</string>
+    <string name="sales_form_property_price">Precio</string>
+    <string name="sales_form_property_viewing_hours">Horario de atención</string>
+    <string name="sales_form_property_viewing_start_time">Ingrese la hora de inicio</string>
+    <string name="sales_form_property_viewing_end_time">Ingrese la hora de finalización</string>
+    <string name="sales_form_property_schedule_selected">Horario seleccionado</string>
+    <string name="sales_form_property_no_schedule_selected">No se ha seleccionado ningún horario</string>
+    <string name="sales_form_property_schedule_days">Días seleccionados</string>"
+    <string name="sales_form_property_schedule_time_selected">Hora de inicio y fin</string>
+</resources>
